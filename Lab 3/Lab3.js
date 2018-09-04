@@ -1,4 +1,5 @@
-
+//Wilco Hansen 99034633
+//Lab 3 - Operatoren
 var X = 3; // wanneer het getal word verandert naar een ander getal word de tafel verandert naar de tafel van dat getal!
 
 var een = 1;
@@ -50,6 +51,18 @@ document.write('36 : ' + Z + ' = ' + som4 + '<br>' + '<br>' + '<br>' + '<br>');
 
 // Stap 4
 var input = prompt('Voer hier een getal in');
-var result = parseInt(input) + zes;
+if (input === ""){
+    alert("Voer alsjeblieft iets in :)");
+}else{
+    var result = parseInt(input) + zes;
+    var secondresult = result * tien;
+    var thirdresult = secondresult / vijf;
+    var fourthresult = thirdresult - input;
 
-document.write( input + ' + 6 ' +  ' = ' + result + '<br>');
+
+    document.write( input + ' + 6 ' +  ' = ' + result + '<br>');
+    document.write( result + ' * 10 ' +  ' = ' + secondresult + '<br>');
+    document.write( secondresult + ' / 5 ' +  ' = ' + thirdresult + '<br>');
+    document.write( thirdresult + ' / 5 ' +  ' = ' + fourthresult + '<br>');
+}
+
