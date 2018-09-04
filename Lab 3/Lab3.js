@@ -32,7 +32,9 @@ document.write('6 * ' + X + ' = '+ ZES + '<br>');
 document.write('7 * ' + X + ' = '+ ZEVEN + '<br>');
 document.write('8 * ' + X + ' = '+ ACHT + '<br>');
 document.write('9 * ' + X + ' = '+ NEGEN + '<br>');
-document.write('10 * ' + X + ' = '+ TIEN + '<br>' + '<br>' + '<br>' + '<br>');
+document.write('10 * '+ X + ' = '+ TIEN + '<br>' + '<br>' + '<br>' + '<br>');
+
+//Stap 3
 
 var Z = 12
 var som1 = 12 + zes; //  +6
@@ -43,4 +45,11 @@ var som4 = 36 - Z;
 document.write('12 + ' + zes + ' = ' + som1 + '<br>' );
 document.write('18 * ' + tien + ' = ' + som2 + '<br>');
 document.write('180 : ' + vijf + ' = ' + som3 + '<br>');
-document.write('36 : ' + Z + ' = ' + som4 + '<br>');
+document.write('36 : ' + Z + ' = ' + som4 + '<br>' + '<br>' + '<br>' + '<br>');
+
+
+// Stap 4
+var input = prompt('Voer hier een getal in');
+var Som1 = input + zes;
+ 
+document.write( input + ' + ' +  ' = ' + Som1 + '<br>');
