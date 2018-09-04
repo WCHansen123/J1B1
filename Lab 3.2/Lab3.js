@@ -36,7 +36,7 @@ document.write('10 * '+ X + ' = '+ TIEN + '<br>' + '<br>' + '<br>' + '<br>');
 
 //Stap 3
 
-var Z = 12
+var Z = 12;
 var som1 = 12 + zes; //  +6
 var som2 = 18 * tien;//  *10
 var som3 = 180 / vijf;// /5
@@ -50,6 +50,19 @@ document.write('36 : ' + Z + ' = ' + som4 + '<br>' + '<br>' + '<br>' + '<br>');
 
 // Stap 4
 var input = prompt('Voer hier een getal in');
-var result = parseInt(input) + zes;
+if (input === ""){
+    alert("Voer alsjeblieft iets in :)");
+}else{
+    var firstResult = parseInt(input) + zes;
+    document.write( input + ' + 6 ' +  ' = ' + firstResult + '<br>');
+}
+var secondResult = firstResult * tien;
+document.write( firstResult + ' * 10 ' +  ' = ' + secondResult + '<br>');
 
-document.write( input + ' + 6 ' +  ' = ' + result + '<br>');
+var thirdResult = secondResult / vijf;
+document.write( secondResult + ' ÷ 5 ' +  ' = ' + thirdResult + '<br>');
+
+var finalResult = thirdResult - parseInt(input);
+document.write( thirdResult + ' - ' + input +  ' = ' + finalResult + '<br>');
+
+

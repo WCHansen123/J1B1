@@ -1,0 +1,17 @@
+.main {
+    margin: auto;
+    margin-top: 10%;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+body {
+    background-image: url("https://cdn.discordapp.com/attachments/298794583112810497/298803161509134336/snoek.png");
+    height: 100%;
+    background-position: center;
+    background-position: 1px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
