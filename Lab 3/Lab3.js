@@ -1,5 +1,4 @@
-//Wilco Hansen 99034633
-//Lab 3 - Operatoren
+
 var X = 3; // wanneer het getal word verandert naar een ander getal word de tafel verandert naar de tafel van dat getal!
 
 var een = 1;
@@ -37,7 +36,7 @@ document.write('10 * '+ X + ' = '+ TIEN + '<br>' + '<br>' + '<br>' + '<br>');
 
 //Stap 3
 
-var Z = 12
+var Z = 12;
 var som1 = 12 + zes; //  +6
 var som2 = 18 * tien;//  *10
 var som3 = 180 / vijf;// /5
@@ -54,15 +53,16 @@ var input = prompt('Voer hier een getal in');
 if (input === ""){
     alert("Voer alsjeblieft iets in :)");
 }else{
-    var result = parseInt(input) + zes;
-    var secondresult = result * tien;
-    var thirdresult = secondresult / vijf;
-    var fourthresult = thirdresult - input;
-
-
-    document.write( input + ' + 6 ' +  ' = ' + result + '<br>');
-    document.write( result + ' * 10 ' +  ' = ' + secondresult + '<br>');
-    document.write( secondresult + ' / 5 ' +  ' = ' + thirdresult + '<br>');
-    document.write( thirdresult + ' / 5 ' +  ' = ' + fourthresult + '<br>');
+    var firstResult = parseInt(input) + zes;
+    document.write( input + ' + 6 ' +  ' = ' + firstResult + '<br>');
 }
+var secondResult = firstResult * tien;
+document.write( firstResult + ' * 10 ' +  ' = ' + secondResult + '<br>');
+
+var thirdResult = secondResult / vijf;
+document.write( secondResult + ' ÷ 5 ' +  ' = ' + thirdResult + '<br>');
+
+var finalResult = thirdResult - parseInt(input);
+document.write( thirdResult + ' - ' + input +  ' = ' + finalResult + '<br>');
+
 
