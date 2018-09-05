@@ -1,12 +1,38 @@
-
 .main {
     margin: auto;
     margin-top: 10%;
     width: 50%;
     border: 3px solid black;
     padding: 10px;
-    text-align: center;
     background-color: white;
+    text-align: center;
 }
 
+ body {background-image: url("pizza.jpg");}
 
+ h1{ text-align: center;    }
+
+ #opgaven { 
+ 	margin: auto;
+ 	margin-top: 10%;
+ 	width: 50%;
+ 	height: 500px;
+    padding: 30px;
+    background-color: white;
+    border: 3px solid black;
+ }
+
+ #menu{
+ 
+ 	margin: auto;
+ 	margin-top: 35%;
+ 	margin-left: 10px;
+ 	width: 40%;
+ 	height: 150px;
+ 	padding: 30px;
+ 	position: absolute;
+
+
+
+
+ }

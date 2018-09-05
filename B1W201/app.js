@@ -1,8 +1,4 @@
-/* small = 5 eu.
-	Middel= 7,50.
-	Groot= 12,00 */
 
-var VIJF = 5;
 
 function SmallP()
 {
@@ -18,10 +14,6 @@ function SmallP()
    
     
 }
-
- 
-
-
 
 function MediumP()
 {
