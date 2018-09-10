@@ -1,25 +1,62 @@
-body{ margin: 10px 300px;
-	  background-color: rgb(32, 32, 32); }
 
-h1{ margin: 0 auto;
+
+body {
+	   margin: 10px 300px;
+	   background-color: rgb(32, 32, 32); 
+}
+
+h1 { 
+	margin: 0 auto;
 	padding: 0;
 	font-weight: 200;
 	color: white;
 	font-size: 50px; 
-	text-align: center; }
+	text-align: center; 
+}
 
-img.ik{ height: 200px;
+img.ik{ 
+		height: 200px;
 		width:  200px; 
 		margin:0 auto;
 		display:block;
-		padding-top: 10px; }
+		padding-top: 10px; 
+	}
 
-div.logo { height: 1000px;
+div.logo { 
+		   height: 1000px;
 		   width: 300px;
-		   background-color: #444444; }
+		   background-color: #444444; 
+	}
 
-li.item { margin: 0 auto;
+li.item { 
+		  margin: 0 auto;
 		  padding: 0;
 		  color: white;
 		  font-size: 30px;
-		 }
+		  text-decoration: none !important; 
+	}
+
+body.Motivatie {
+	font-family: sans-serif;:;
+	padding: 10px;
+	background-image: url(../img/background.jpg);: 
+	background-repeat: no-repeat;
+    
+    background-attachment: fixed;
+}
+
+
+
+#paraaf { text-decoration: line-through;
+		  margin-left:10px; }
+
+#page{ background-color: white; 
+		opacity: 0.9;
+		width: 900px; 
+		padding: 10px;}
+
+p {padding-left: 10px;}
+h3 {padding-left: 10px;
+	padding-top: 10px;}
+h4 {padding-left: 10px;
+	padding-bottom:10px;}
