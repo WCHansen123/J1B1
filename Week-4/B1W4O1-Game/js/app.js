@@ -47,12 +47,16 @@ function start() {
 });
 }
 */
-function controleer (element, calc, x, y) {
-  //console.log(element.value);
+var punt = 0;
+ document.getElementById('punt');
+
+function controleer (element, calc, x, y, punt) {
+  console.log(element.value);
   if (calc == "multiply") {
     if (x * y == element.value) {
       console.log("wow je kan rekenen!");
       element.style.color = "#008000";
+      punt++;
     } else {
       console.log("Jeez wat een sukkel ben jij!");
       element.style.color = "#FF0000";
@@ -93,3 +97,4 @@ function simple() {
         h.style.display = "block";
     }
   }
+
