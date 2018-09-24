@@ -1,0 +1,69 @@
+body{
+    margin: 0 25%;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.menu li{
+	float: left;
+	display: block;
+}
+
+section.menu ul{
+	margin: 0;
+}
+
+section.menu {
+	height: 20px;
+	width: 410px;
+	padding: 10px;
+	text-decoration:none;
+	border: 1px solid black;
+	margin-left: 380px;
+	margin-top: 70px;
+}
+
+section.menu a{
+	padding-right: 18px;
+	text-decoration: none;
+	color: black;
+}
+
+section.header h1{
+	font-size: 36px;
+	line-height: 36px;
+}
+
+section.header p{
+	font-size: 24px;
+	line-height: 32px;
+}
+
+section.ing li{
+	margin-bottom: 10px;
+}
+
+section.ing{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+section.maak li{
+	margin-bottom: 20px;
+}
+
+p{
+	font-size: 20px;
+	line-height: 26px;
+}
+
+h1{
+	font-size: 32px;
+	line-height: 32px;
+}
+
+.tip{
+	background-color: #def6ed;
+	border: 2px solid #def6ed;
+	border-radius: 4px;
+	margin: 25px 0;
+}
