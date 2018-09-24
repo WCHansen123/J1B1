@@ -3,6 +3,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/*Dit zijn de css code's voor het menu*/
 section.menu li{
 	float: left;
 	display: block;
@@ -18,7 +19,7 @@ section.menu {
 	padding: 10px;
 	text-decoration:none;
 	border: 1px solid black;
-	margin-left: 380px;
+	margin-left: 350px;
 	margin-top: 70px;
 }
 
