@@ -64,3 +64,21 @@ button#simple{
 	margin-left: auto;
 	margin-right: auto;
 }
+
+#puntdiv{
+	
+	text-align: center;
+}
+
+#controleerknop{
+	height: 42px;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button#knop{
+	padding: 10px;
+	margin-left: 30%;
+}
+
