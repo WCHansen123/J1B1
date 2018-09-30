@@ -48,15 +48,16 @@ function start() {
 }
 */
 var punt = 0;
- document.getElementById('punt');
+var element_punt = document.getElementById('punt');
 
-function controleer (element, calc, x, y, punt) {
+function controleerSimpel (element, calc, x, y) {
   console.log(element.value);
   if (calc == "multiply") {
     if (x * y == element.value) {
       console.log("wow je kan rekenen!");
       element.style.color = "#008000";
-      punt++;
+      punt = punt + 1;
+      element_punt.innerHTML = punt;
     } else {
       console.log("Jeez wat een sukkel ben jij!");
       element.style.color = "#FF0000";
@@ -65,6 +66,8 @@ function controleer (element, calc, x, y, punt) {
     if (x + y == element.value) {
       console.log("wow je kan rekenen!");
       element.style.color = "#008000";
+      punt = punt + 1;
+      element_punt.innerHTML = punt;
     } else {
       console.log("Jeez wat een sukkel ben jij!");
       element.style.color = "#FF0000";
@@ -73,6 +76,43 @@ function controleer (element, calc, x, y, punt) {
     if (x - y == element.value) {
       console.log("wow je kan rekenen!");
       element.style.color = "#008000";
+      punt = punt + 1;
+      element_punt.innerHTML = punt;
+    } else {
+      console.log("Jeez wat een sukkel ben jij!");
+      element.style.color = "#FF0000";
+    }
+  }
+}
+
+function controleerHard (element, calc, x, y) {
+  console.log(element.value);
+  if (calc == "multiply") {
+    if (x * y == element.value) {
+      console.log("wow je kan rekenen!");
+      element.style.color = "#008000";
+      punt = punt + 1;
+      element_punt.innerHTML = punt;
+    } else {
+      console.log("Jeez wat een sukkel ben jij!");
+      element.style.color = "#FF0000";
+    }
+  } else if (calc == "plus") {
+    if (x + y == element.value) {
+      console.log("wow je kan rekenen!");
+      element.style.color = "#008000";
+      punt = punt + 1;
+      element_punt.innerHTML = punt;
+    } else {
+      console.log("Jeez wat een sukkel ben jij!");
+      element.style.color = "#FF0000";
+    }
+  } else if (calc == "minus") {
+    if (x - y == element.value) {
+      console.log("wow je kan rekenen!");
+      element.style.color = "#008000";
+      punt = punt + 1;
+      element_punt.innerHTML = punt;
     } else {
       console.log("Jeez wat een sukkel ben jij!");
       element.style.color = "#FF0000";
@@ -98,3 +138,11 @@ function simple() {
     }
   }
 
+function winlose() {
+  if (punt >= 9) {
+    alert("Geslaagd!! je bent slimmer dan je eruit ziet")
+    else if (punt <= 8) {
+      alert("Gezakt!! je bent dommer dan ik dacht..")
+    }
+  }
+}

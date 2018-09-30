@@ -18,85 +18,96 @@
 	<button id="hard" onclick="hard(this)">Hard</button>
 </div>
 
-<span id="punt">0</span>
+<br>
+<br>
+
+<div id="puntdiv">
+	<h4>Punten</h4>
+	<span id="punt">0</span>
+</div>
 
 <div id="Ssom1">
-	<p>8 X 12 =</p> <input type="text" id="myInput1" onchange="controleer(this, 'multiply', 8, 12, 'punt')">
+	<p>8 X 12 =</p> <input type="text" id="myInput1" onchange="controleerSimpel(this, 'multiply', 8, 12,)">
 	<br>
 	<br>
-	<p>36 + 48 =</p> <input type="text" id="myInput2" onchange="controleer(this, 'plus', 36, 48)">
+	<p>36 + 48 =</p> <input type="text" id="myInput2" onchange="controleerSimpel(this, 'plus', 36, 48)">
 	<br> 
 	<br>
-	<p>4 X 21 =</p> <input type="text" id="myInput3" onchange="controleer(this, 'multiply', 4, 21)">
+	<p>4 X 21 =</p> <input type="text" id="myInput3" onchange="controleerSimpel(this, 'multiply', 4, 21)">
 	<br>
 	<br>
-	<p>112 - 21 =</p> <input type="text" id="myInput4" onchange="controleer(this, 'minus', 112, 21)">
+	<p>112 - 21 =</p> <input type="text" id="myInput4" onchange="controleerSimpel(this, 'minus', 112, 21)">
 	<br>
 	<br>
-	<p>19 X 19 =</p> <input type="text" id="myInput5" onchange="controleer(this, 'multiply', 19, 19)">
+	<p>19 X 19 =</p> <input type="text" id="myInput5" onchange="controleerSimpel(this, 'multiply', 19, 19)">
 	<br>
 	<br>
-	<p>100 X 5 =</p> <input type="text" id="myInput1" onchange="controleer(this, 'multiply', 100, 5)">
+	<p>100 X 5 =</p> <input type="text" id="myInput1" onchange="controleerSimpel(this, 'multiply', 100, 5)">
 	<br>
 	<br>
-	<p>34 + 78 =</p> <input type="text" id="myInput2" onchange="controleer(this, 'plus', 34, 78)">
+	<p>34 + 78 =</p> <input type="text" id="myInput2" onchange="controleerSimpel(this, 'plus', 34, 78)">
 	<br>
 	<br>
-	<p>30 X 7 =</p> <input type="text" id="myInput3" onchange="controleer(this, 'multiply', 30, 7)">
+	<p>30 X 7 =</p> <input type="text" id="myInput3" onchange="controleerSimpel(this, 'multiply', 30, 7)">
 	<br>
 	<br>
-	<p>231 - 47 =</p> <input type="text" id="myInput4" onchange="controleer(this, 'minus', 231, 47)">
+	<p>231 - 47 =</p> <input type="text" id="myInput4" onchange="controleerSimpel(this, 'minus', 231, 47)">
 	<br>
 	<br>
-	<p>12 X 9 =</p> <input type="text" id="myInput5" onchange="controleer(this, 'multiply', 12, 9)">
+	<p>12 X 9 =</p> <input type="text" id="myInput5" onchange="controleerSimpel(this, 'multiply', 12, 9)">
 	<br>
 	<br>
-	<p>213 - 18 =</p> <input type="text" id="myInput4" onchange="controleer(this, 'minus', 213, 18)">
+	<p>213 - 18 =</p> <input type="text" id="myInput4" onchange="controleerSimpel(this, 'minus', 213, 18)">
 	<br>
 	<br>
-	<p>10 X 9 =</p> <input type="text" id="myInput5" onchange="controleer(this, 'multiply', 10, 9)">
+	<p>10 X 9 =</p> <input type="text" id="myInput5" onchange="controleerSimpel(this, 'multiply', 10, 9)">
 	<br>
 </div>
 
 <div id="Hsom1">
-	<p>25 X 12 =</p> <input type="text" id="myInput1" onchange="controleer(this, 'multiply', 25, 12)">
+	<p>25 X 12 =</p> <input type="text" id="myInput1" onchange="controleerHard(this, 'multiply', 25, 12)">
 	<br>
 	<br>
-	<p>1120 + 780 =</p> <input type="text" id="myInput2" onchange="controleer(this, 'plus', 1120, 780)">
+	<p>1120 + 780 =</p> <input type="text" id="myInput2" onchange="controleerHard(this, 'plus', 1120, 780)">
 	<br> 
 	<br>
-	<p>14 X 21 =</p> <input type="text" id="myInput3" onchange="controleer(this, 'multiply', 14, 21)">
+	<p>14 X 21 =</p> <input type="text" id="myInput3" onchange="controleerHard(this, 'multiply', 14, 21)">
 	<br>
 	<br>
-	<p>2040 - 1121 =</p> <input type="text" id="myInput4" onchange="controleer(this, 'minus', 2040, 1121)">
+	<p>2040 - 1121 =</p> <input type="text" id="myInput4" onchange="controleerHard(this, 'minus', 2040, 1121)">
 	<br>
 	<br>
-	<p>40 X 12 =</p> <input type="text" id="myInput5" onchange="controleer(this, 'multiply', 40, 12)">
+	<p>40 X 12 =</p> <input type="text" id="myInput5" onchange="controleerHard(this, 'multiply', 40, 12)">
 	<br>
 	<br>
-	<p>100 X 15 =</p> <input type="text" id="myInput1" onchange="controleer(this, 'multiply', 100, 15)">
+	<p>100 X 15 =</p> <input type="text" id="myInput1" onchange="controleerHard(this, 'multiply', 100, 15)">
 	<br>
 	<br>
-	<p>340 + 1854 =</p> <input type="text" id="myInput2" onchange="controleer(this, 'plus', 340, 1854)">
+	<p>340 + 1854 =</p> <input type="text" id="myInput2" onchange="controleerHard(this, 'plus', 340, 1854)">
 	<br>
 	<br>
-	<p>30 X 7 =</p> <input type="text" id="myInput3" onchange="controleer(this, 'multiply', 30, 7)">
+	<p>30 X 7 =</p> <input type="text" id="myInput3" onchange="controleerHard(this, 'multiply', 30, 7)">
 	<br>
 	<br>
-	<p>2310 - 470 =</p> <input type="text" id="myInput4" onchange="controleer(this, 'minus', 2310, 470)">
+	<p>2310 - 470 =</p> <input type="text" id="myInput4" onchange="controleerHard(this, 'minus', 2310, 470)">
 	<br>
 	<br>
-	<p>120 X 90 =</p> <input type="text" id="myInput5" onchange="controleer(this, 'multiply', 120, 90)">
+	<p>120 X 90 =</p> <input type="text" id="myInput5" onchange="controleerHard(this, 'multiply', 120, 90)">
 	<br>
 	<br>
-	<p>2130 - 1800 =</p> <input type="text" id="myInput4" onchange="controleer(this, 'minus', 2130, 1800)">
+	<p>2130 - 1800 =</p> <input type="text" id="myInput4" onchange="controleerHard(this, 'minus', 2130, 1800)">
 	<br>
 	<br>
-	<p>100 X 95 =</p> <input type="text" id="myInput5" onchange="controleer(this, 'multiply', 100, 95)">
+	<p>100 X 95 =</p> <input type="text" id="myInput5" onchange="controleerHard(this, 'multiply', 100, 95)">
 	<br>
 </div>
 
-
+<br>
+<br>
+<div id="controleerknop">
+	<button id="knop" onclick="winlose()">check</button>
+	
+</div>
 
 
 

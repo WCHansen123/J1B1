@@ -1,6 +1,11 @@
 body{
-    margin: 0 25%;
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+	line-height: 26px;
+}
+
+div.container{
+	margin: 0 25%;
 }
 
 /*Dit zijn de css code's voor het menu*/
@@ -15,7 +20,7 @@ section.menu ul{
 
 section.menu {
 	height: 20px;
-	width: 410px;
+	width: 500px;
 	padding: 10px;
 	text-decoration:none;
 	border: 1px solid black;
@@ -52,10 +57,6 @@ section.maak li{
 	margin-bottom: 20px;
 }
 
-p{
-	font-size: 20px;
-	line-height: 26px;
-}
 
 h1{
 	font-size: 32px;
@@ -67,4 +68,8 @@ h1{
 	border: 2px solid #def6ed;
 	border-radius: 4px;
 	margin: 25px 0;
+}
+
+p.tiptext{
+	margin-left: 20px;
 }
