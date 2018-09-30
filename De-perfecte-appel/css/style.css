@@ -1,0 +1,45 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-image: url("../img/appels.jpg");
+	background-repeat: no-repeat;
+	height: 100%; /* You must set a specified height */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+ div.container{
+ 	background-color: white;
+ 	height: 1000px;
+ 	width: 1200px;
+ 	margin: 0 auto;
+ }
+
+.logo{
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+
+div.menu {
+	height: 50px;
+	width: 100%;
+	text-decoration:none;
+	background-color: #A52A2A;
+}
+
+/*makes the list-items go side to side and makes the 0 go away*/
+div.menu li{
+	float: left;
+	display: block;
+	padding-top: 10px;
+}
+
+div.menu a{
+	padding-left: 18px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
