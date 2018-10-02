@@ -121,6 +121,10 @@ function controleerHard (element, calc, x, y) {
 }
 
 function simple() {
+   var h = document.getElementById("Hsom1");
+    if (h.style.display === "block") {
+        h.style.display = "none";
+    }
     var z = document.getElementById("Ssom1");
     if (z.style.display === "block") {
         z.style.display = "none";
@@ -130,6 +134,10 @@ function simple() {
   }
 
   function hard() {
+    var z = document.getElementById("Ssom1");
+    if (z.style.display === "block") {
+        z.style.display = "none";
+    } 
     var h = document.getElementById("Hsom1");
     if (h.style.display === "block") {
         h.style.display = "none";
@@ -138,11 +146,12 @@ function simple() {
     }
   }
 
-function winlose() {
-  if (punt >= 9) {
-    alert("Geslaagd!! je bent slimmer dan je eruit ziet")
-    else if (punt <= 8) {
-      alert("Gezakt!! je bent dommer dan ik dacht..")
-    }
+
+function winlose(){
+  if(punt >= 9){
+    alert('groter gelijk 9');
+  }
+  else{
+   alert( 'lose'); 
   }
 }
