@@ -16,16 +16,16 @@
 
             while(counter < 6) {
 
-            for (var i = 0; i < 9; i++) {
-                robotArm.moveRight();
-            }
-            for (var i = 0; i < 5; i++) {
-                robotArm.grab();
-                robotArm.moveLeft();
-                robotArm.drop();
-                robotArm.moveLeft();
+                for (var i = 0; i < 9; i++) {
+                    robotArm.moveRight();
                 }
-            counter++;
+                for (var i = 0; i < 5; i++) {
+                    robotArm.grab();
+                    robotArm.moveLeft();
+                    robotArm.drop();
+                    robotArm.moveLeft();
+                }
+                counter++;
             }
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();

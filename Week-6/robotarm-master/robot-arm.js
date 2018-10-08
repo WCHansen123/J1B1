@@ -16,7 +16,7 @@ var RobotArm = function (canvas) {
     // The amount of rows to use
     self.rows = 8;
     // The speed of which the animations go
-    self.speed = 300;
+    self.speed = 700;
 
     // List of animations
     local.animationList = [];
