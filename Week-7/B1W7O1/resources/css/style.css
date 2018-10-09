@@ -9,70 +9,143 @@ body{
 	line-height: 20px;
 }
 
+h2{
+	font-size: 20px;
+	line-height: 22px;
+	margin-top: 10px;
+}
+
+h1{
+	font-size: 26px;
+	line-height: 30px;
+}
+
 .grid-container{
 	width: 1100px;
 	display: grid;
 	grid-template-columns: 139px 137px 137px 137px 137px 137px 137px 139px; 
-	background-color: #7c7c88;
+	
 	margin: auto auto;
 	padding-top: 5px;
 }
 
 .item{
-	background-color: #f5f5f5;
+	/*background-color: #f5f5f5;*/
 }
 
 .logo{
-	grid-column: 1 / 3;
+	background-image: url(../img/header_bg.png);
+	grid-column: 1 / 4;
   	grid-row: 1;
-  	
 }
 
 .menu{
-	grid-column: 3 / 9;
+	background-image: url(../img/header_bg.png);
+	grid-column: 4 / 9;
   	grid-row: 1;
-  	padding-left: 70px;
   	
 }
 
-.menu li, .menu a{
+.menu li{
 	list-style-type: none;
 	float: left;
-	padding-left: 30px;
+	padding-left: 25px;
 	font-size: 20px;
 	line-height: 30px;
-	margin-top: 30px;
+	padding-top: 30px;
+}
+
+.menu a{
+	text-decoration: none;
+	color: black;
 }
 
 /*alle content die in de header staat*/
 .header{
-	grid-column: 1 / 9;
-  	grid-row: 4;
+	background-image: url(../img/banner_bg.png);
+	grid-column: 1 / 6;
+  	grid-row: 2;
 }
 
-.banner_bg{
-	width: 1100px;
-	height: 500px;
+.header2{
+	background-image: url(../img/banner_bg.png);
+	grid-column: 4 / 9;
+  	grid-row: 2;
 }
 
 .banner{
-	position: absolute;
-	display: inline;
+	padding-top: 25px;
+	padding-left: 40px;
+	padding-bottom: 75px;
+	height: 300px;
+	width: 600px;
 }
 
 
 
+.headertxt{
+	background-image: url(../img/banner_bg.png);
+	grid-column: 6 / 9;
+  	grid-row: 2;
+  	padding-top: 35px;
+  	color: white;
+}
+
+.headertxt p{
+	padding-top: 10px;
+	padding-right: 50px;
+}
+
+.headertxt2{
+	background-image: url(../img/banner_bg.png);
+	grid-column: 1 / 4;
+  	grid-row: 2;
+  	padding-top: 35px;
+  	color: white;
+}
+
+.headertxt2 p, .headertxt2 h1{
+	padding-top: 10px;
+	padding-left: 50px;
+}
+
+.fade-slider{
+	grid-column: 1 / 4;
+	grid-row: 3;
+	padding-top: 30px;
+	padding-left: 50px;
+	width: 300px;
+}
+
+
+.nivo-slider{
+	grid-column: 4 / 6;
+	grid-row: 3;
+	padding-top: 30px;
+	margin-left: -13px;
+	width: 300px;
+}
 
 
 
+.bonus-slider{
+	grid-column: 6 / 9;
+	grid-row: 3;
+	padding-top: 30px;
+	padding-left: 57px;
+	width: 300px;
+}
 
+.fade-slider p, .nivo-slider p, .bonus-slider p{
+	padding-top: 10px;
+}
 
-/*font-family: 'Lato', sans-serif;*/
-/*Je maakt gebruik van een div om gehele pagina te centreren, deze div is 1100px breeed.
-De font size van de normale teksten is 14px en de lijn hoogte 20px.
-De hoofd titel heeft een font size van 26 pixels en een lijn hoogte van 30 pixels.
-Alle andere titels hebben een font size van 20 pixels en een lijn hoogte van 22 pixels. 
-Er staan 3 achtergrond plaatjes in het bijgeleverde bestand, gebruik deze voor de juiste plaats (header_bg, banner_bg en footer_bg) en in de css file.
-Je maakt een net menu (zie voorbeeld) voor elke pagina zodat er genavigeerd kan worden tussen de verschillende pagina's.
-Zorg dat alle pagina's dezelfde look hebben, maar je mag voor de background kleuren (plaatjes) zelf iets maken.
-Zet onderin de footer je eigen naam.*/
+.footer{
+	grid-column: 1 / 9;
+	grid-row: 4;
+	background-image: url(../img/footer_bg.png);
+	text-align: center;
+	color: white;
+	padding: 10px;
+	margin-top: 86px;
+}
