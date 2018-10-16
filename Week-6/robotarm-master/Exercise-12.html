@@ -11,32 +11,28 @@
             robotArm.loadLevel("exercise 12");
             
             // Jou instructies volgen hier
-
-
-            for (var a = 0; a < 9 ;) {
-                
-            
+            var canvas = document.getElementById("canvas");
+            var robotArm = new RobotArm(canvas);
+           
+             for (a = 0; a < 9;) { 
                 robotArm.grab();
                     if (robotArm.scan() == 'red') {
-                        console.log("Dit blok heeft de kleur rood")
-                        for(var i = 9; i > a; i-- ){
-                            robotArm.moveRight();
-                        }
-                            robotArm.drop();
-                        for(var j = 8; j > a; j-- ){
-                            robotArm.moveLeft();
-                        }
+                    for (i = 9; i > a;i--){
+                        robotArm.moveRight();   
+                    } 
+
+                    robotArm.drop();
+                    
+                    for (j = 8; j > a;j--){
+                        robotArm.moveLeft();
+                        
                     }
-                    else {
-                        console.log("Dit blok heeft niet de kleur rood")
+                    }else {
                         robotArm.drop();
                         robotArm.moveRight();
-                    }
-                       a++;
-                       
-                }
-
-
+                }a++;
+            }
+            
 
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();

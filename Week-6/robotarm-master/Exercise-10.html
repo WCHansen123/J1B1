@@ -18,24 +18,21 @@
             for (var j = 0; j < 4; j++) { 
                 robotArm.moveRight();}
                 robotArm.grab();
-
-                    for (var i = 1; i < 5; i++) {
-
-                        for (var a = 0; a < i; a++) {
-
+                    for (var i = 2; i < 4; i++) {
+                      for (var a = 0; a < i; a++) {
                             for (var k = 0; k < rechts; k++) {
                                 robotArm.moveRight();
                             }
-                                rechts += 2;
-                                robotArm.drop();
-
-                                    for(var l = 0; l < links; l++){
-                                        robotArm.moveLeft();
-                                    }
-                                        links += 2;
-                                        robotArm.grab();
-                            }
-                    }
+                rechts += 2;
+                robotArm.drop();
+                    for(var l = 0; l < links; l++){
+                        robotArm.moveLeft();
+                }
+                
+                links += 2;
+                robotArm.grab();
+                }
+            }
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
         </script>
