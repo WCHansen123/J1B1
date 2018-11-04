@@ -23,7 +23,7 @@ var bitterballen16 = 0;
 
 
 function bestel(){
-		var keuze = prompt("Wat wilt u bestellen?");
+		var keuze = prompt("Wat wilt u bestellen?").toLowerCase();
 			if (keuze == "fris"){
 				var aantalfris = parseInt(prompt("Hoeveel fris wilt u bestellen?"));
 				parseInt(fris = fris + aantalfris);
@@ -65,7 +65,7 @@ function bestel(){
 	}
 
 function bitterbal(){
-	var keuzeBitterbal = prompt("Hoeveel Bitterballen wilt u? 8 of 16?");
+	var keuzeBitterbal = prompt("Hoeveel Bitterballen wilt u? 8 of 16?").toLowerCase();
 		if (keuzeBitterbal == "8") {
 			var schalen = parseInt(prompt("Hoeveel schalen wilt u bestellen?"));
 			parseInt(bitterballen8 = bitterballen8 + schalen);
@@ -80,6 +80,11 @@ function bitterbal(){
 			uitrekenen();
 			document.getElementById("BestBitterbal16").innerHTML = bitterballen16 + " Biterballen 16 stuks = " +"€"+ TotaalPrijsBitterbalen16;
 			bestel();
+		}
+
+		else {
+			alert("Het ingevoerde item is ongeldig!");
+			bitterbal()
 		}
 }
 
